@@ -9,6 +9,7 @@ in
   shell = pkgs.mkShellNoCC {
     name = "vasm_z80_assembler";
     buildInputs = [
+      pkgs.tree
       pkgs.cowsay
       pkgs.lolcat
       vasm
