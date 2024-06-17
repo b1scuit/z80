@@ -15,6 +15,8 @@ in
     ];
 
     shellHook = ''
+      export PS1="\n\[\033[1;32m\][Z80-shell:\w]\$\[\033[0m\] "
+      alias view="hexdump -C a.out"
       echo "Z80 Shell" | cowsay | lolcat
     '';
   };

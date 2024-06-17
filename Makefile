@@ -6,3 +6,7 @@ a.out:
 .PHONY: view
 view:
 	hexdump -C a.out
+
+.PHONY: clean
+clean:
+	rm -Rf a.out
